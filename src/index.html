@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.html', {
+    "title": "Freelancer artist"
+})
+<body>
+
+    @@include('html/_slide-menu.html')
+    @@include('html/_message-box.html', {})
+
+    @@include('html/_preloader.html', {})
+
+    <main class="page main-page">
+        @@include('html/_header.html', {
+            "color": "black",
+            "dynamic": true,
+            "content-wrapper": "content-wrapper"
+        })
+
+        <div class="blackout"></div>
+
+        <div class="fullscreen">
+            <div class="fullscreen__body">
+                <div class="hello-block">
+                    @@include('html/_header.html', {
+                        "color": "white",
+                        "dynamic": false,
+                        "content-wrapper": "content-wrapper"
+                    })
+
+                    <span class="hello-block__scroll-link scroll-down-link">
+                        <div class="scroll-down-link__wrapper">
+                            Scroll Down
+                            <svg class="scroll-down-link__arrow" width="24" height="24" fill-rule="evenodd" clip-rule="evenodd" fill="#b2b2b2"><path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"></path></svg>
+                        </div>
+                    </span>
+
+                    <div class="hello-block__content-wrapper">
+                        <div class="hello-block__center hello-block__catchy">
+                            <span class="hello-block__text">Hello, I am <i class="highlighted">Richard Brown</i></span>
+                            <span class="hello-block__headtext">ARTIST</span>
+                            <span class="hello-block__text">From Melbourne, Australia</span>
+
+                            <div class="hello-block__buttons-wrapper">
+                                <a href="/portfolio.html" class="big-btn big-btn--green">SEE MY WORK</a>
+                                <a href="/clients.html" class="big-btn big-btn--outlined">OUR APPROACH</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hello-block__footer hello-footer">
+                        <div class="hello-footer__block">
+                            <ul class="hello-footer__social">
+                                <li><a href="/"><i class="_icon-facebook"></i></a></li>
+                                <li><a href="/"><i class="_icon-twitter"></i></a></li>
+                                <li><a href="/"><i class="_icon-google-plus"></i></a></li>
+                                <li><a href="/"><i class="_icon-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="hello-footer__block">
+                            <span><i class="_icon-phone"></i>&nbsp; +1-800-273-8255</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="articles-filter">
+            <span class="articles-filter__item">Showing all</span>
+            <span class="articles-filter__item">Brochure</span>
+            <span class="articles-filter__item">Logo Design</span>
+            <span class="articles-filter__item">Printing</span>
+            <span class="articles-filter__item">Web Design</span>
+        </div>
+
+        <div class="main-page__articles articles">
+            <article class="articles__item article-item">
+                <a href="/single-article.html">
+                <div class="article-item__container">
+                    <div class="article-item__image ibg">
+                        <img src="@img/Thumbnail-2.jpg" alt="">
+                    </div>
+
+                    <div class="article-item__legend article-legend">
+                        <div class="article-legend__container">
+                            <div class="article-legend__content">
+                                <span class="article-legend__title">Mockup Design</span>
+                                <span class="article-legend__subtitle">Branding</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="articles__item article-item">
+                <a href="/single-article.html">
+                    <div class="article-item__container">
+                        <div class="article-item__image ibg">
+                            <img src="@img/Thumbnail-2.jpg" alt="">
+                        </div>
+
+                        <div class="article-item__legend article-legend">
+                            <div class="article-legend__container">
+                                <div class="article-legend__content">
+                                    <span class="article-legend__title">Mockup Design</span>
+                                    <span class="article-legend__subtitle">Branding</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="articles__item article-item">
+                <a href="/single-article.html">
+                <div class="article-item__container">
+                    <div class="article-item__image ibg">
+                        <img src="@img/Thumbnail-2.jpg" alt="">
+                    </div>
+
+                    <div class="article-item__legend article-legend">
+                        <div class="article-legend__container">
+                            <div class="article-legend__content">
+                                <span class="article-legend__title">Mockup Design</span>
+                                <span class="article-legend__subtitle">Branding</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="articles__item article-item">
+                <a href="/single-article.html">
+                <div class="article-item__container">
+                    <div class="article-item__image ibg">
+                        <img src="@img/Thumbnail-2.jpg" alt="">
+                    </div>
+
+                    <div class="article-item__legend article-legend">
+                        <div class="article-legend__container">
+                            <div class="article-legend__content">
+                                <span class="article-legend__title">Mockup Design</span>
+                                <span class="article-legend__subtitle">Branding</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="articles__item article-item">
+                <a href="/single-article.html">
+                <div class="article-item__container">
+                    <div class="article-item__image ibg">
+                        <img src="@img/Thumbnail-2.jpg" alt="">
+                    </div>
+
+                    <div class="article-item__legend article-legend">
+                        <div class="article-legend__container">
+                            <div class="article-legend__content">
+                                <span class="article-legend__title">Mockup Design</span>
+                                <span class="article-legend__subtitle">Branding</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="articles__item article-item">
+                <a href="/single-article.html">
+                <div class="article-item__container">
+                    <div class="article-item__image ibg">
+                        <img src="@img/Thumbnail-2.jpg" alt="">
+                    </div>
+
+                    <div class="article-item__legend article-legend">
+                        <div class="article-legend__container">
+                            <div class="article-legend__content">
+                                <span class="article-legend__title">Mockup Design</span>
+                                <span class="article-legend__subtitle">Branding</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="articles__item article-item">
+                <a href="/single-article.html">
+                <div class="article-item__container">
+                    <div class="article-item__image ibg">
+                        <img src="@img/Thumbnail-2.jpg" alt="">
+                    </div>
+
+                    <div class="article-item__legend article-legend">
+                        <div class="article-legend__container">
+                            <div class="article-legend__content">
+                                <span class="article-legend__title">Mockup Design</span>
+                                <span class="article-legend__subtitle">Branding</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="articles__item article-item">
+                <a href="/single-article.html">
+                <div class="article-item__container">
+                    <div class="article-item__image ibg">
+                        <img src="@img/Thumbnail-2.jpg" alt="">
+                    </div>
+
+                    <div class="article-item__legend article-legend">
+                        <div class="article-legend__container">
+                            <div class="article-legend__content">
+                                <span class="article-legend__title">Mockup Design</span>
+                                <span class="article-legend__subtitle">Branding</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="articles__item article-item">
+                <a href="/single-article.html">
+                <div class="article-item__container">
+                    <div class="article-item__image ibg">
+                        <img src="@img/Thumbnail-2.jpg" alt="">
+                    </div>
+
+                    <div class="article-item__legend article-legend">
+                        <div class="article-legend__container">
+                            <div class="article-legend__content">
+                                <span class="article-legend__title">Mockup Design</span>
+                                <span class="article-legend__subtitle">Branding</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="articles__item article-item">
+                <a href="/single-article.html">
+                <div class="article-item__container">
+                    <div class="article-item__image ibg">
+                        <img src="@img/Thumbnail-2.jpg" alt="">
+                    </div>
+
+                    <div class="article-item__legend article-legend">
+                        <div class="article-legend__container">
+                            <div class="article-legend__content">
+                                <span class="article-legend__title">Mockup Design</span>
+                                <span class="article-legend__subtitle">Branding</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="articles__item article-item">
+                <a href="/single-article.html">
+                <div class="article-item__container">
+                    <div class="article-item__image ibg">
+                        <img src="@img/Thumbnail-2.jpg" alt="">
+                    </div>
+
+                    <div class="article-item__legend article-legend">
+                        <div class="article-legend__container">
+                            <div class="article-legend__content">
+                                <span class="article-legend__title">Mockup Design</span>
+                                <span class="article-legend__subtitle">Branding</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </a>
+            </article>
+
+            <article class="articles__item article-item">
+                <a href="/single-article.html">
+                <div class="article-item__container">
+                    <div class="article-item__image ibg">
+                        <img src="@img/Thumbnail-2.jpg" alt="">
+                    </div>
+
+                    <div class="article-item__legend article-legend">
+                        <div class="article-legend__container">
+                            <div class="article-legend__content">
+                                <span class="article-legend__title">Mockup Design</span>
+                                <span class="article-legend__subtitle">Branding</span>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </a>
+            </article>
+        </div>
+
+        @@include('html/_in-touch.html', {})
+
+        @@include('html/_footer.html', {})
+    </main>
+
+</body>
+</html>

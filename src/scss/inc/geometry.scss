@@ -1,0 +1,27 @@
+.content-wrapper--narrow,
+.content-wrapper {
+    box-sizing: border-box;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.content-wrapper--narrow {
+    max-width: 1230px;
+}
+
+.fullscreen {
+    min-height: 100vh;
+    display: flex;
+
+    &__body {
+        max-width: 100%;
+        flex: 1 1 auto;
+        width: 100%;
+    }
+}
+
+.page {
+    flex-direction: column;
+    min-height: 100vh;
+    display: flex;
+}

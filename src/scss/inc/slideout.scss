@@ -1,0 +1,44 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.slideout-menu {
+    transition: transform .3s ease-in-out;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 320px;
+    min-height: 100vh;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    transform: translateX(320px);
+    z-index: 0;
+}
+
+.slideout-menu-left {
+    left: 0;
+}
+
+.slideout-menu-right {
+    right: 0;
+}
+
+.slideout-panel {
+    position: relative;
+    z-index: 1;
+    transform: none !important;
+    background-color: #FFF; /* A background-color is required */
+    min-height: 100vh;
+}
+
+.slideout-open .slideout-menu {
+    transform: translateX(0px);
+}
+
+.slideout-open .slideout-panel {
+    .blackout {
+        pointer-events: painted;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,120 @@
+.contact-page {
+    &__title {
+        margin-top: 65px;
+    }
+
+    .contact-form {
+        width: 100%;
+
+        &__wrapper {
+            padding: 100px 150px 0;
+
+            @media (max-width: $md2) {
+                padding: 100px 70px 0;
+            }
+
+            @media (max-width: $md3) {
+                padding: 100px 30px;
+            }
+        }
+
+        &__action {
+            text-align: center;
+            margin-top: 65px;
+
+            .big-btn {
+                padding: 17px 45px;
+                min-width: 0;
+            }
+        }
+    }
+
+    .contact-inputs {
+        justify-content: space-between;
+        display: flex;
+
+        @media (max-width: $md3) {
+            flex-direction: column;
+        }
+
+        &__block {
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: stretch;
+            display: flex;
+            flex: 0 0 48%;
+        }
+
+        .form-input__input {
+            resize: none;
+            width: 100%;
+
+            @media (max-width: $md3) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .contact-address {
+        margin: 110px auto 80px;
+        padding: 0 110px;
+        width: 100%;
+
+        @media (max-width: $md3) {
+            margin: 20px auto 80px;
+
+            &__list {
+                flex-direction: column;
+            }
+
+            &__item {
+                margin-bottom: 30px;
+            }
+        }
+
+        &__list {
+            justify-content: space-between;
+            display: flex;
+        }
+        
+        .map-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+    }
+
+    .contact-address-item {
+        text-align: center;
+
+        &__icon {
+            margin-bottom: 15px;
+        }
+
+        &__title {
+            line-height: 140%;
+            color: #101010;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        &__content {
+            letter-spacing: 0.5px;
+            line-height: 156.25%;
+            color: #757575;
+            margin: 20px 0 20px;
+            font-size: 16px;
+            display: block;
+        }
+
+        &__link {
+            color: $secondary-color;
+            line-height: 187.5%;
+            letter-spacing: 1px;
+            font-size: 12px;
+
+            &:hover {
+                font-weight: 500;
+            }
+        }
+    }
+}

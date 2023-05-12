@@ -1,0 +1,114 @@
+.slide-menu {
+    background: #FFF;
+    overflow: hidden;
+    z-index: 100;
+    
+    &__wrapper {
+        position: relative;
+        padding: 50px 40px;
+    }
+
+    &__close-btn {
+        transition: transform .3s ease-in-out;
+        position: absolute;
+        cursor: pointer;
+        right: 40px;
+        top: 36px;
+
+        &::after {
+            background: url("../img/cross.svg") center center no-repeat;
+            background-size: cover;
+            display: block;
+            height: 35px;
+            width: 35px;
+            content: "";
+        }
+
+        &:hover {
+            transform: rotate(90deg) scale(.9);
+        }
+    }
+
+    &__navigation {
+        border-bottom: 3px solid #E8E8E8;
+    }
+
+    &__contacts {
+        flex-direction: column;
+        padding-top: 30px;
+        display: flex;
+
+        div {
+            margin-bottom: 30px;
+        }
+
+        i {
+            vertical-align: middle;
+            display: inline-block;
+            text-align: end;
+            font-size: 15px;
+            width: 22px;
+        }
+
+        ._icon-mail {
+            font-size: 30px;
+        }
+
+        span {
+            margin-left: 15px;
+        }
+    }
+
+    &__social {
+        margin-bottom: 45px;
+    }
+
+    &__start-project {
+        font-size: 18px !important;
+    }
+}
+
+.slide-menu-nav {
+    ul {
+        flex-direction: column;
+        display: flex;
+    }
+
+    &__item {
+        margin-bottom: 24px;
+        line-height: 132%;
+        font-weight: 600;
+        font-size: 17px;
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}
+
+.slide-menu-social {
+    &__item {
+        border: 1px solid rgba(16, 16, 16, 0.3);
+        box-sizing: border-box;
+        display: inline-block;
+        position: relative;
+        margin-right: 10px;
+        border-radius: 50%;
+        color: #505050;
+        font-size: 13px;
+        height: 35px;
+        width: 35px;
+
+        i {
+            transform: translate(-50%, -50%);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+        }
+        
+        &:hover {
+            border: 1px solid #101010;
+            color: #101010;
+        }
+    }
+}

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.html', {
+    "title": "Freelancer artist"
+})
+<body>
+
+    @@include('html/_slide-menu.html')
+    @@include('html/_message-box.html', {})
+
+    @@include('html/_preloader.html', {})
+
+    <main class="page single-article-page">
+        @@include('html/_header.html', {
+            "color": "black",
+            "dynamic": true,
+            "content-wrapper": "content-wrapper--narrow"
+        })
+
+        <div class="blackout"></div>
+
+        <div class="image-preview fullscreen">
+            @@include('html/_header.html', {
+                "color": "white",
+                "dynamic": false,
+                "content-wrapper": "content-wrapper--narrow"
+            })
+
+            <div class="image-preview__image-wrapper ibg">
+                <img src="@img/single-art-image.jpg" alt="">
+            </div>
+
+            <div class="image-preview__legend image-preview-legend">
+                <div class="image-preview-legend__wrapper">
+                    <span class="image-preview-legend__title">Thomsoon</span>
+                    <span class="image-preview-legend__subtitle">Branding and Packaging</span>
+                </div>
+            </div>
+
+            <div class="image-preview__scroll-link scroll-down-link"></div>
+        </div>
+
+        <div class="article-wrapper content-wrapper--narrow">
+            <div class="article-content">
+                <div class="article-content__gallery article-gallery">
+                    <div
+                        data-img-src="@img/single-art-gallery-image.jpg"
+                        class="js-previewable article-gallery__item ibg"
+                    >
+                        <div class="image-blackout"></div>
+                        <img src="@img/single-art-gallery-image.jpg" alt="">
+                    </div>
+
+                    <div
+                        data-img-src="@img/journal.jpg"
+                        class="js-previewable article-gallery__item ibg"
+                    >
+                        <div class="image-blackout"></div>
+                        <img src="@img/journal.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="article-content__description artcile-description">
+                    <div class="artcile-description__header article-header">
+                        <span class="article-header__main">Magazine</span>
+                        <span class="article-header__secondary">Branding and Packaging</span>
+                    </div>
+
+                    <div class="artcile-description__text article-text">
+                        <p>
+                            As our research revealed, customers go through three main stages while decorating their homes finding inspiration, making decisions, selecting products, and finally, undertaking the actual painting process. On the basis of the three fundamental pillars of inspiration, decision-making and implementation, we crafted a unique navigation flow that enabled.
+                        </p>
+                    </div>
+
+                    <div class="article-details">
+                        <span class="article-details__header">Details</span>
+
+                        <div class="article-details__list">
+                            <div class="article-details__item">
+                                <span class="article-detail-key">Client</span>
+                                <span class="article-detail-separator">:</span>
+                                <span class="article-detail-value">El.Cafeh PVT. LTD.</span>
+                            </div>
+
+                            <div class="article-details__item">
+                                <span class="article-detail-key">Category</span>
+                                <span class="article-detail-separator">:</span>
+                                <span class="article-detail-value">Branding, UI Design</span>
+                            </div>
+
+                            <div class="article-details__item">
+                                <span class="article-detail-key">Service</span>
+                                <span class="article-detail-separator">:</span>
+                                <span class="article-detail-value">Art Direction, Design</span>
+                            </div>
+
+                            <div class="article-details__item">
+                                <span class="article-detail-key">Time</span>
+                                <span class="article-detail-separator">:</span>
+                                <span class="article-detail-value">40 Days</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="article-social">
+                        <span class="article-social__title">Share</span>
+
+                        <div class="article-social__list">
+                            <a href="#"><i class="_icon-facebook"></i></a>
+                            <a href="#"><i class="_icon-twitter"></i></a>
+                            <a href="#"><i class="_icon-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <a href="#" class="big-btn big-btn--black artcile-description__start-btn article-start">LAUNCH</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="related-works content-wrapper--narrow">
+            <div class="related-works__wrapper">
+                <div class="related-works__hr"></div>
+
+                <span class="related-works__title">Related Works</span>
+
+                <div class="related-works__slider">
+                    <div class="related-works__item related-article">
+                        <article class="related-article__image article-item">
+                            <div class="article-item__wrapper">
+                                <a href="/single-article.html">
+                                    <div class="article-item__container">
+                                        <div class="article-item__image ibg">
+                                            <img src="@img/Thumbnail-2.jpg" alt="">
+                                        </div>
+    
+                                        <div class="article-item__legend article-legend">
+                                            <div class="article-legend__container">
+                                                <i class="article-legend__arrow"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+
+                        <div class="related-article__description">
+                            <span class="related-article__title">Girl Magazine</span>
+                            <span class="related-article__subtitle">Graphic Design</span>
+                        </div>
+                    </div>
+
+                    <div class="related-works__item related-article">
+                        <article class="related-article__image article-item">
+                            <div class="article-item__wrapper">
+                                <a href="/single-article.html">
+                                    <div class="article-item__container">
+                                        <div class="article-item__image ibg">
+                                            <img src="@img/girl.jpg" alt="">
+                                        </div>
+
+                                        <div class="article-item__legend article-legend">
+                                            <div class="article-legend__container">
+                                                <i class="article-legend__arrow"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+
+                        <div class="related-article__description">
+                            <span class="related-article__title">Girl Magazine</span>
+                            <span class="related-article__subtitle">Graphic Design</span>
+                        </div>
+                    </div>
+
+                    <div class="related-works__item related-article">
+                        <article class="related-article__image article-item">
+                            <div class="article-item__wrapper">
+                                <a href="/single-article.html">
+                                    <div class="article-item__container">
+                                        <div class="article-item__image ibg">
+                                            <img src="@img/single-art-image.jpg" alt="">
+                                        </div>
+
+                                        <div class="article-item__legend article-legend">
+                                            <div class="article-legend__container">
+                                                <i class="article-legend__arrow"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+
+                        <div class="related-article__description">
+                            <span class="related-article__title">Girl Magazine</span>
+                            <span class="related-article__subtitle">Graphic Design</span>
+                        </div>
+                    </div>
+
+                    <div class="related-works__item related-article">
+                        <article class="related-article__image article-item">
+                            <div class="article-item__wrapper">
+                                <a href="/single-article.html">
+                                    <div class="article-item__container">
+                                        <div class="article-item__image ibg">
+                                            <img src="@img/single-art-gallery-image.jpg" alt="">
+                                        </div>
+
+                                        <div class="article-item__legend article-legend">
+                                            <div class="article-legend__container">
+                                                <i class="article-legend__arrow"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+
+                        <div class="related-article__description">
+                            <span class="related-article__title">Girl Magazine</span>
+                            <span class="related-article__subtitle">Graphic Design</span>
+                        </div>
+                    </div>
+
+                    <div class="related-works__item related-article">
+                        <article class="related-article__image article-item">
+                            <div class="article-item__wrapper">
+                                <a href="/single-article.html">
+                                    <div class="article-item__container">
+                                        <div class="article-item__image ibg">
+                                            <img src="@img/zigzag.jpg" alt="">
+                                        </div>
+
+                                        <div class="article-item__legend article-legend">
+                                            <div class="article-legend__container">
+                                                <i class="article-legend__arrow"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+
+                        <div class="related-article__description">
+                            <span class="related-article__title">Girl Magazine</span>
+                            <span class="related-article__subtitle">Graphic Design</span>
+                        </div>
+                    </div>
+
+                    <div class="related-works__item related-article">
+                        <article class="related-article__image article-item">
+                            <div class="article-item__wrapper">
+                                <a href="/single-article.html">
+                                    <div class="article-item__container">
+                                        <div class="article-item__image ibg">
+                                            <img src="@img/A-letter.jpg" alt="">
+                                        </div>
+
+                                        <div class="article-item__legend article-legend">
+                                            <div class="article-legend__container">
+                                                <i class="article-legend__arrow"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+
+                        <div class="related-article__description">
+                            <span class="related-article__title">Girl Magazine</span>
+                            <span class="related-article__subtitle">Graphic Design</span>
+                        </div>
+                    </div>
+
+                    <div class="related-works__item related-article">
+                        <article class="related-article__image article-item">
+                            <div class="article-item__wrapper">
+                                <a href="/single-article.html">
+                                    <div class="article-item__container">
+                                        <div class="article-item__image ibg">
+                                            <img src="@img/thomsoon.jpg" alt="">
+                                        </div>
+
+                                        <div class="article-item__legend article-legend">
+                                            <div class="article-legend__container">
+                                                <i class="article-legend__arrow"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </article>
+
+                        <div class="related-article__description">
+                            <span class="related-article__title">Girl Magazine</span>
+                            <span class="related-article__subtitle">Graphic Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="articles-navigation">
+            <div class="articles-navigation__wrapper content-wrapper--narrow">
+                <a href="#" class="articles-navigation__text"><i class="_icon-arrow-left"></i>&nbsp; PREV</a>
+                <span class="articles-navigation__text">ALL WORKS</span>
+                <a href="#" class="articles-navigation__text">NEXT &nbsp;<i class="_icon-arrow-right"></i></a>
+            </div>
+        </div>
+
+        @@include('html/_image-preview.html', {})
+
+        @@include('html/_footer.html', {})
+    </main>
+
+    <script>
+        $(document).ready(function() {
+            $('.related-works__slider').slick({
+                infinite: true,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                dots: true,
+                arrows: false,
+
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToScroll: 1,
+                            slidesToShow: 2,
+                            infinite: true
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToScroll: 1,
+                            slidesToShow: 1,
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            })
+        })
+    </script>
+
+</body>
+</html>

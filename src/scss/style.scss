@@ -1,0 +1,53 @@
+// <fonts>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+$primary-font: 'Roboto', sans-serif;
+$special-font: 'Playfair Display', sans-serif;
+// </fonts>
+
+// <vars>
+$secondary-color: #948F46;
+$md1: 1600px;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 479.98px;
+// </vars>
+
+
+@import "inc/reset.scss";
+@import "inc/slick.scss";
+@import "inc/slideout.scss";
+@import "inc/slide-menu.scss";
+@import "inc/icons.scss";
+@import "inc/geometry.scss";
+@import "inc/form.scss";
+@import "inc/crosspage.scss";
+@import "inc/header.scss";
+@import "inc/footer.scss";
+@import "inc/message-box.scss";
+@import "inc/image-popup-preview.scss";
+@import "inc/preloader.scss";
+
+@import "page/main-page.scss";
+@import "page/about-page.scss";
+@import "page/portfolio-page.scss";
+@import "page/single-article-page.scss";
+@import "page/clients-page.scss";
+@import "page/contact-page.scss";
+
+body {
+    font-family: $primary-font;
+}
+
+.highlighted {
+    color: $secondary-color;
+}
+
+.preload * {
+    transition: none !important;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}

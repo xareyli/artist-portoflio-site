@@ -1,0 +1,123 @@
+.image-popup-preview {
+    transition: opacity .5s ease-in-out;
+    pointer-events: none;
+    position: fixed;
+    z-index: 200;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    left: 0;
+    top: 0;
+
+    &__shown {
+        pointer-events: initial;
+        opacity: 1;
+    }
+
+    &__wrapper {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__image-wrapper {
+        transition: background-image .2s ease-in-out;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        aspect-ratio: 11/8;
+        width: 60%;
+        left: 50%;
+        top: 50%;
+
+        @media (max-width: $md3) {
+            width: 90%;
+        }
+    }
+
+    &__arrows {
+        & > span {
+            border: 3px solid #C6C6C6;
+            transform: translateY(-50%);
+            position: absolute;
+            border-radius: 50%;
+            color: #979797;
+            cursor: pointer;
+            padding: 10px;
+            top: 50%;
+
+            @media (max-width: $md3) {
+                border: 2px solid #C6C6C6;
+                font-size: 16px;
+                padding: 7px;
+            }
+
+            i {
+                vertical-align: middle;
+                pointer-events: none;
+            }
+
+            @media (max-width: $md3) and (min-width: $md4) {
+                &:nth-child(1) {
+                    left: 50px !important;
+                }
+    
+                &:nth-child(2) {
+                    right: 50px !important;
+                }
+            }
+
+            &:nth-child(1) {
+                left: 30px;
+            }
+
+            &:nth-child(2) {
+                right: 30px;
+            }
+
+            &:hover {
+                border-color: #FFF;
+                color: #FFF;
+            }
+        }
+    }
+
+    &__close {
+        transition: transform .3s ease-in-out;
+        border: 3px solid #C6C6C6;
+        border-radius: 50%;
+        position: absolute;
+        cursor: pointer;
+        padding: 7px;
+        right: 40px;
+        top: 36px;
+
+        &::after {
+            //background: url("../img/cross.svg") center center no-repeat;
+            -webkit-mask-image: url("../img/cross.svg");
+            mask-image: url("../img/cross.svg");
+            background-color: #C6C6C6;
+            background-size: cover;
+            display: block;
+            height: 22px;
+            width: 22px;
+            content: "";
+        }
+
+        &:hover {
+            border-color: #FFF;
+
+            &::after {
+                background-color: #FFF;
+            }
+        }
+    }
+
+    &__blackout {
+        background: rgba($color: #000000, $alpha: .7);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+}

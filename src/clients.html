@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.html', {
+    "title": "Freelancer artist"
+})
+<body>
+
+    @@include('html/_slide-menu.html')
+    @@include('html/_message-box.html', {})
+
+    @@include('html/_preloader.html', {})
+
+    <main class="page clients-page">
+        @@include('html/_header.html', {
+            "color": "black",
+            "dynamic": true,
+            "content-wrapper": "content-wrapper--narrow"
+        })
+
+        <div class="blackout"></div>
+
+        @@include('html/_header.html', {
+            "color": "black",
+            "dynamic": false,
+            "content-wrapper": "content-wrapper--narrow"
+        })
+
+        <div class="clients-block content-wrapper--narrow">
+            <div class="complex-page-title">
+                <span class="complex-page-title__secondary">OUR CLIENTS</span>
+                <span class="complex-page-title__main">Our goal is to help individuals and businesses utilize the power of social media and various marketing platform.</span>
+            </div>
+
+            <div class="clients-block__list clients-list">
+            </div>
+        </div>
+
+        <div class="testimonials">
+            <div class="testimonials__wrapper content-wrapper--narrow">
+                <div class="testimonials__title">
+                    <span>Tesimonials.</span>
+                </div>
+
+                <div class="testimonials__slider-wrapper">
+                    <span class="testimonials__slider-arrow" data-direction="left">
+                        <i class="_icon-arrow-left"></i>
+                    </span>
+
+                    <div class="testimonials__slider">
+                        <div class="testimonial">
+                            <div class="testimonial__quote">
+                                <img src="@img/quote.svg" alt="">
+                            </div>
+    
+                            <div class="testimonial__content">
+                                <div class="testimonial__text">
+                                    <p>We build immersive experiences that help your brand connect with your customers and community. We help you generate more profits or reduce costs through. </p>
+                                </div>
+    
+                                <div class="testimonial__author">
+                                    <span>Anthony Green</span>
+                                </div>
+    
+                                <div class="testimonial__job">
+                                    <span>CEO at Green Wokrs</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial">
+                            <div class="testimonial__quote">
+                                <img src="@img/quote.svg" alt="">
+                            </div>
+    
+                            <div class="testimonial__content">
+                                <div class="testimonial__text">
+                                    <p>We build immersive experiences that help your brand connect with your customers and community. We help you generate more profits or reduce costs through. </p>
+                                </div>
+    
+                                <div class="testimonial__author">
+                                    <span>Anthony Green</span>
+                                </div>
+    
+                                <div class="testimonial__job">
+                                    <span>CEO at Green Wokrs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <span class="testimonials__slider-arrow" data-direction="right">
+                        <i class="_icon-arrow-right"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        @@include('html/_in-touch.html', {})
+
+        <script>
+            const clientsList = $('.clients-list');
+    
+            for (let i = 0; i < 18; i++) {
+                clientsList.append(`
+                    <div class="clients-list__item ibg">
+                        <img src="@img/clients/item-${i}.jpg" alt="">
+                    </div>
+                `)
+            }
+
+            $(document).ready(function() {
+                $('.testimonials__slider').slick({
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    prevArrow: $('.testimonials__slider-arrow[data-direction=left]'),
+                    nextArrow: $('.testimonials__slider-arrow[data-direction=right]'),
+                    dots: true,
+
+                    responsive: [
+                        {
+                            breakpoint: 800,
+                            settings: {
+                                slidesToScroll: 1,
+                                slidesToShow: 1,
+                                infinite: true,
+                                arrows: false
+                            }
+                        }
+                    ]
+                })
+            })
+        </script>
+
+        @@include('html/_footer.html', {})
+    </main>
+
+</body>
+</html>

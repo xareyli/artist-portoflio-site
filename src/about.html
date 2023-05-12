@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('html/_head.html', {
+        "title": "Freelancer artist"
+    })
+</head>
+<body>
+
+    @@include('html/_slide-menu.html')
+    @@include('html/_message-box.html', {})
+
+    @@include('html/_preloader.html', {})
+
+    <main class="page about-page">
+        @@include('html/_header.html', {
+            "color": "black",
+            "dynamic": true,
+            "content-wrapper": "content-wrapper--narrow"
+        })
+
+        <div class="blackout"></div>
+
+        <div class="hello-block">
+            @@include('html/_header.html', {
+                "color": "white",
+                "dynamic": false,
+                "content-wrapper": "content-wrapper--narrow"
+            })
+
+            <div class="hello-block__content-wrapper">
+                <div class="hello-block__catchy">
+                    <span class="hello-block__headtext">Hello, I am<br>Richard Brown.</span>
+                    <p class="hello-block__text">I am a Sydney based Graphic Designer with 8 years of experience in the industry. In an ideal world, I would like to simplify people’s lives.</p>
+
+                    <div class="hello-block__buttons-wrapper">
+                        <a class="big-btn big-btn--green">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-block">
+            <div class="info-block__wrapper content-wrapper--narrow">
+                <div class="info-block__text-info text-info">
+                    <span class="text-info__title block-title">Britz is a global<br>network of design.</span>
+
+                    <p class="text-info__text">I am a Sydney based Graphic Designer with 8 years of experience in the industry. In an ideal world, I would like to simplify people’s lives in whatever small way I can and do it in such a manner that it becomes second nature to them and they don’t even realize it. I can and do it in such a manner that it becomes second nature to them and they don’t even realize it. </p>
+                </div>
+
+                <div class="info-block__progress-info progress-info">
+                    <div class="progress-info__bar progress-bar">
+                        <span class="progress-bar__title">Branding</span>
+                        <div class="progress-bar__number" aria-valuenow="95"></div>
+                        <div class="progress-bar__rounded">
+                            <div class="progress-bar__filler" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="progress-info__bar progress-bar">
+                        <span class="progress-bar__title">Design</span>
+                        <div class="progress-bar__number" aria-valuenow="93"></div>
+                        <div class="progress-bar__rounded">
+                            <div class="progress-bar__filler" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="progress-info__bar progress-bar">
+                        <span class="progress-bar__title">Photoshop</span>
+                        <div class="progress-bar__number" aria-valuenow="90"></div>
+                        <div class="progress-bar__rounded">
+                            <div class="progress-bar__filler" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="progress-info__bar progress-bar">
+                        <span class="progress-bar__title">Website</span>
+                        <div class="progress-bar__number" aria-valuenow="88"></div>
+                        <div class="progress-bar__rounded">
+                            <div class="progress-bar__filler" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="progress-info__bar progress-bar">
+                        <span class="progress-bar__title">Marketing</span>
+                        <div class="progress-bar__number" aria-valuenow="85"></div>
+                        <div class="progress-bar__rounded">
+                            <div class="progress-bar__filler" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-block">
+            <div class="service-block__wrapper content-wrapper--narrow">
+                <span class="service-block__title block-title">Service.</span>
+
+                <div class="service-block__switcher">
+                    <span><i class="_icon-arrow-left"></i></span>
+                    <span><i class="_icon-arrow-right"></i></span>
+                </div>
+
+                <div class="service-block__slider service-slider">
+                    <div class="service-slider__item service-slide">
+                        <div class="service-slide__wrapper">
+                            <div class="service-slide__icon">
+                                <img src="@img/web-design.png" alt="">
+                            </div>
+
+                            <span class="service-slide__title">Web Design</span>
+                            <p class="service-slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do iusmodm incididunt ut labore et dolore magna aliqua.</p>
+
+                            <a href="#" class="service-slide__link">READ MORE <i class="_icon-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="service-slider__item service-slide">
+                        <div class="service-slide__wrapper">
+                            <div class="service-slide__icon">
+                                <img src="@img/ecom.png" alt="">
+                            </div>
+
+                            <span class="service-slide__title">Ecommerce</span>
+                            <p class="service-slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do iusmodm incididunt ut labore et dolore magna aliqua.</p>
+
+                            <a href="#" class="service-slide__link">READ MORE <i class="_icon-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="service-slider__item service-slide">
+                        <div class="service-slide__wrapper">
+                            <div class="service-slide__icon">
+                                <img src="@img/social-media.png" alt="">
+                            </div>
+
+                            <span class="service-slide__title">Social Media</span>
+                            <p class="service-slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do iusmodm incididunt ut labore et dolore magna aliqua.</p>
+
+                            <a href="#" class="service-slide__link">READ MORE <i class="_icon-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="service-slider__item service-slide">
+                        <div class="service-slide__wrapper">
+                            <div class="service-slide__icon">
+                                <img src="@img/marketing.png" alt="">
+                            </div>
+
+                            <span class="service-slide__title">Marketing</span>
+                            <p class="service-slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do iusmodm incididunt ut labore et dolore magna aliqua.</p>
+
+                            <a href="#" class="service-slide__link">READ MORE <i class="_icon-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="service-slider__item service-slide">
+                        <div class="service-slide__wrapper">
+                            <div class="service-slide__icon">
+                                <img src="@img/web-design.png" alt="">
+                            </div>
+
+                            <span class="service-slide__title">Web Design</span>
+                            <p class="service-slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do iusmodm incididunt ut labore et dolore magna aliqua.</p>
+
+                            <a href="#" class="service-slide__link">READ MORE <i class="_icon-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="service-slider__item service-slide">
+                        <div class="service-slide__wrapper">
+                            <div class="service-slide__icon">
+                                <img src="@img/ecom.png" alt="">
+                            </div>
+
+                            <span class="service-slide__title">Ecommerce</span>
+                            <p class="service-slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do iusmodm incididunt ut labore et dolore magna aliqua.</p>
+
+                            <a href="#" class="service-slide__link">READ MORE <i class="_icon-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="service-slider__item service-slide">
+                        <div class="service-slide__wrapper">
+                            <div class="service-slide__icon">
+                                <img src="@img/social-media.png" alt="">
+                            </div>
+
+                            <span class="service-slide__title">Social Media</span>
+                            <p class="service-slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do iusmodm incididunt ut labore et dolore magna aliqua.</p>
+
+                            <a href="#" class="service-slide__link">READ MORE <i class="_icon-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="service-slider__item service-slide">
+                        <div class="service-slide__wrapper">
+                            <div class="service-slide__icon">
+                                <img src="@img/marketing.png" alt="">
+                            </div>
+
+                            <span class="service-slide__title">Marketing</span>
+                            <p class="service-slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do iusmodm incididunt ut labore et dolore magna aliqua.</p>
+
+                            <a href="#" class="service-slide__link">READ MORE <i class="_icon-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('html/_in-touch.html', {})
+
+        @@include('html/_footer.html', {})
+    </main>
+
+    <script>
+        $(window).scroll(updateProgressBarOnScroll);
+
+        const progressBars = $('.progress-bar');
+
+        updateProgressBarOnScroll();
+
+        function updateProgressBarOnScroll() {
+            if (window.pageYOffset + document.documentElement.clientHeight < progressBars.position().top) {
+                return false;
+            }
+
+            for (let progressBar of progressBars) {
+                progressBar = $(progressBar);
+
+                const value = progressBar.find('.progress-bar__number').attr('aria-valuenow');
+
+                progressBar.find('.progress-bar__number').css('left', value + '%');
+
+                const filler = $(progressBar.find('.progress-bar__filler'));
+                const fillerWidth = filler.attr('aria-valuenow') / filler.attr('aria-valuemax') * 100;
+
+                filler.css('width', fillerWidth + '%');
+            }
+        }
+
+        $(document).ready(function() {
+            $('.service-slider').slick({
+                infinite: true,
+                speed: 300,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                prevArrow: $('.service-block__switcher ._icon-arrow-left'),
+                nextArrow: $('.service-block__switcher ._icon-arrow-right'),
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            infinite: true
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            })
+        })
+    </script>
+
+</body>
+</html>

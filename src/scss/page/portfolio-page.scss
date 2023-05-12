@@ -1,0 +1,33 @@
+.portfolio-page {
+    .page-title {
+        margin: 70px 0 100px;
+        text-align: center;
+
+        &__subtitle {
+            letter-spacing: 2px;
+            color: #898989;
+            font-weight: 400;
+            font-size: 15px;
+            display: block;
+            margin-bottom: 50px;
+        }
+
+        &__text {
+            color: #101010;
+            font-weight: 500;
+            font-size: 50px;
+
+            @media (max-width: $md3) {
+                font-size: 40px;
+            }
+        }
+    }
+
+    .in-touch-block {
+        background: #F9F9F9;
+    }
+
+    &__articles {
+        margin-bottom: 100px;
+    }
+}

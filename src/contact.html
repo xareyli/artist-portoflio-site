@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.html', {
+    "title": "Freelancer artist"
+})
+<body>
+
+    @@include('html/_slide-menu.html')
+    @@include('html/_message-box.html', {})
+
+    @@include('html/_preloader.html', {})
+
+    <main class="page contact-page">
+        @@include('html/_header.html', {
+            "color": "black",
+            "dynamic": true,
+            "content-wrapper": "content-wrapper--narrow"
+        })
+
+        <div class="blackout"></div>
+
+        @@include('html/_header.html', {
+            "color": "black",
+            "dynamic": false,
+            "content-wrapper": "content-wrapper--narrow"
+        })
+
+        <div class="contact-page__title complex-page-title">
+            <span class="complex-page-title__secondary">CONTACT US</span>
+            <span class="complex-page-title__main">Get in touch and feel the creativity.</span>
+        </div>
+
+        <form class="contact-form" action="/contact.html">
+            <div class="contact-form__wrapper content-wrapper--narrow">
+                <div class="contact-form__inputs contact-inputs">
+                    <div class="contact-inputs__block">
+                        <div class="form-input">
+                            <span class="form-input__caption">Name*</span>
+                            <input class="form-input__input" type="text">
+                        </div>
+
+                        <div class="form-input">
+                            <span class="form-input__caption">Email*</span>
+                            <input class="form-input__input" type="text">
+                        </div>
+
+                        <div class="form-input">
+                            <span class="form-input__caption">Phone*</span>
+                            <input class="form-input__input" type="text">
+                        </div>
+                    </div>
+
+                    <div class="contact-inputs__block">
+                        <div class="form-input">
+                            <span class="form-input__caption">Message*</span>
+                            <textarea class="form-input__input" rows="15"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form__action">
+                    <div class="big-btn big-btn--green">SUBMIT</div>
+                </div>
+            </div>
+        </form>
+
+        <div class="contact-address content-wrapper--narrow">
+            <div class="contact-address__list">
+                <div class="contact-address__item contact-address-item">
+                    <div class="contact-address-item__icon">
+                        <img src="@img/phone.png" alt="">
+                    </div>
+
+                    <span class="contact-address-item__title">PHONE</span>
+
+                    <p class="contact-address-item__content">
+                        +20 009 2211 000<br>
+                        +90 009 2211 000
+                    </p>
+                </div>
+
+                <div class="contact-address__item contact-address-item">
+                    <div class="contact-address-item__icon">
+                        <img src="@img/map.png" alt="">
+                    </div>
+
+                    <span class="contact-address-item__title">LOCATION</span>
+
+                    <p class="contact-address-item__content">
+                        Media House<br>
+                        Link Road, New Street<br>
+                        401107, Mumbai, India
+                    </p>
+
+                    <a href="#" class="contact-address-item__link">GET DIRECTIONS</a>
+                </div>
+
+                <div class="contact-address__item contact-address-item">
+                    <div class="contact-address-item__icon">
+                        <img src="@img/email.png" alt="">
+                    </div>
+
+                    <span class="contact-address-item__title">EMAILS</span>
+
+                    <p class="contact-address-item__content">
+                        info@example.com<br>
+                        hello@example.com
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        @@include('html/_footer.html', {})
+    </main>
+
+</body>
+</html>

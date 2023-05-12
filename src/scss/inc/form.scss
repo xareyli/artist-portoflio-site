@@ -1,0 +1,25 @@
+.form-input {
+    &__caption {
+        line-height: 150%;
+        color: #101010;
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    &__input {
+        transition: background-color .2s ease-in-out;
+        border: 1px solid #D0D0D0;
+        box-sizing: border-box;
+        padding: 17px 20px;
+        color: #101010;
+        margin-top: 10px;
+        font-size: 14px;
+        display: block;
+
+        &:active,
+        &:focus {
+            background-color: #F7F7F7;
+            outline: 0;
+        }
+    }
+}
