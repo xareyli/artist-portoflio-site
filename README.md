@@ -5,4 +5,6 @@
 Проект сделан с адаптивной вёрсткой и поддерживает мобильную версию.
 Тестирован в старых браузерах firefox и яндекс.браузер.
 
+https://melbourne-artist.vercel.app/
+
 ![preview](https://github.com/xareyli/artist-portoflio-site/assets/118266546/8665b702-4e29-4655-9b4f-c6dfc3da44cf)
